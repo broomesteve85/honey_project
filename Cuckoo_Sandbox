@@ -1,0 +1,17 @@
+Cuckoo Sandbox Configuration
+
+I followed https://hatching.io/blog/cuckoo-sandbox-setup/ to setup and configure Cuckoo
+I Downloaded Ubuntu 18.04 from https://ubuntu.com/download/desktop
+I used VMware 16 to setup my Ubuntu Virtual Machine
+
+Machine Details
+Username: cuckoo
+Password: cuckoo
+
+Initiation commands #this will start cuckoo
+. ~/cuckoo/bin/activate # navigate to python virtual env
+start router: cuckoo rooter --sudo --group cuckoo
+start mongodb: cuckoo web --host 100.100.128.140 --port 8080
+start web UI: cuckoo web --host 127.0.0.1 --port 8080
+Open Morzila Firefox
+127.0.0.1:8080 # cuckoo WebUI
